@@ -1,0 +1,104 @@
+body
+{
+    margin: 0px;
+    background-image: url("https://i.pinimg.com/originals/bd/32/68/bd3268654edc7fdb69d6548824a8fe89.jpg");
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.container
+{
+    width: 400px;
+    height: 600px;
+    border: 5px solid black;
+    box-shadow: 2px 2px 20px white;
+    text-align: center;
+    border-radius: 10%;
+}
+
+#singer, #song
+{
+    font-family: sans-serif;
+}
+
+#singer
+{
+    font-style: italic;
+    text-shadow: 2px 2px 20px white;
+}
+
+.controls
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#play, #backward, #forward
+{
+    font-size: 30px;
+}
+
+#play
+{
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#play:hover
+{
+    color: black;
+    background-color: white;
+}
+
+
+@media screen and (max-width: 600px) 
+{
+    .container
+    {
+        width: 300px;
+    }    
+    img
+    {
+        width: 250px;
+        height: 250px;
+    }
+    #play, #forward, #backward
+    {
+        font-size: 20px;
+    }
+
+}
+
+.progressbarcontainer
+{
+    border: 1px solid white;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+.progressbar
+{
+    border: 1px solid orange;
+    width: 0%;
+    height: 4px;
+    background-color: orange;
+}
+
+.time
+{
+    display: flex;
+    justify-content: space-between;
+}
